@@ -1,0 +1,112 @@
+---
+title: "Sprint 2"
+author: "Datank"
+date: "Mayo, 2018"
+output: html_document
+---
+
+---
+title: "Sprint 2"
+author: "Datank"
+date: "Mayo 2018"
+output: html_document
+---
+
+## Sprint 2
+
++ **Inicio:** 6 junio 2018
++ **Fin:** 19 junio 2018
+
+### SQL y Window functions
+
+**Objetivo:** Aprender SQL y Window functions
+
++ Tutorial de [sql codecademy](https://www.codecademy.com/learn/learn-sql) requieres de abrir una cuenta
++ Tutorial de [sql mode](https://community.modeanalytics.com/sql/tutorial/sql-in-mode/) requiere de abrir una cuenta
++ Revisar todos los temas de Basic SQL
++ Revisar todos los temas de Intermediate SQL
++ Revisar del track de Advanced SQL los temas:
+    + Writing subqueries in SQL
+    + SQL Window Functions
++ Revisar la cláusula WITH de postgres para subqueries más eficientes y legibles [PostgreSQL](https://www.postgresql.org/docs/9.5/static/queries-with.html)
+
+Para este task requires de tener PostgreSQL >= 9.5
+
+#### Entregables
+
++ Genera en el proyecto "Aprendizaje Humano" tus tarjetas con issues para este sprint (si no existe un proyecto Aprendizaje Humano pídele a Irving Simonin que te ayude a crear uno)
++ Recuerda que se requiere una tarjeta por task -puedes poner cada pregunta de este entregable como un task- o todo el entregable, depende de tu organización, solo recuerda que cada task va asociado a un branch
+
+**Northwind database** 
+
+Cuentas con los datos de Northwind -una base de datos artificial que ocupa Microsoft para los demos de muchos de sus productos- que tiene los registros de venta de productos de una empresa. Los datos se encuentran en `s3://datank-research/aprendizaje_humano/resources/northwind/` (necesitarás solicitar permiso de entrada al S3 de Datank con Alejandro Cisneros, te solicitará que le pases tu llave pública ... si no tienes idea de lo que me refiero revisa esta [documentación primero](https://www.maketecheasier.com/generate-public-private-ssh-key/))
+
+1. ¿Cuántas órdenes diferentes hay en tu dataset?
+2. ¿De qué fechas tenemos datos? (año, mes y día mínimo y máximo)?
+3. ¿Con qué granularidad están los datos -por día-, es decir, tenemos datos diarios, solo entre semana? ¿Existen gaps en las fechas (días sin registro de órdenes)?
+4. ¿Cuál es el delta de tiempo más grande entre una orden y otra -en días-? Utiliza `lag` en tu respuesta y `datediff` 
+5. ¿Cuál es el delta de tiempo más pequeño entre una orden y otra -en minutos o segundos-? Utiliza `lag` en tu respuesta y `datediff`
+6. ¿Cuál es el 7mo producto más vendido? Utiliza `rank` en tu respuesta
+7. ¿Cuál es el 5to producto más vendido por mes? Utiliza `rank` en tu respuesta
+8. ¿Cuáles son jefes? Revisa el atributo `reportsto` inidica su nombre `firstname`, apellido `lastname`, departamento al que pertenece `title`, desde cuándo está en la compañía `hiredate` y cuántos empleados tiene a su cargo
+9. Por cada "jefe" muestra el nombre `firstname` y apellido `lastname` del jefe seguido de un arreglo de id empleados `employeeid` de los empleados que tiene a su cargo. Utiliza `array_agg` en tu respuesta
+10. ¿Cuál es el promedio de productos vendidos por orden y mes? 
+11. ¿En qué lugar de ventas se encuentra México? (ventas a enviar a México) Ocupa `rank` en tu respuesta
+
+$\rightarrow$ Si necesitas hacer queries anidados utiliza en su lugar la cláusula `with`!
+
+**Flights database**
+
+Esta base de datos tiene datos de vuelos con demoras y cancelaciones de estados unidos. Los datos se encuentran en `s3://datank-research/aprendizaje_humano/flights/`
+
+1. ¿Cuál es el aeropuerto con mayor tráfico de entrada? (vuelos diferentes) Ocupa en tu respuesta el nombre del aeropuerto (`join`)
+2. ¿Cuántas aerolíneas diferentes llegan al aeropuerto de Detroit? Ocupa una búsqueda con expresión regular no sensitiva (`ilike`) para obtener el iata_code del aeropuerto de Detroit, indica los nombres de las aerolíneas (`join`)
+3. ¿Cuál es la aerolínea con mayor retraso de salida por día de la semana? `departure_delay`
+4. ¿Qué aerolínea deberíamos tomar para tener la menor demora posible para llegar a Detroit? (ocupa `arrival_delay` como métrica, por qué ocupar esa variable?)
+5. ¿En qué día de la semana se tienen menor cantidad de retrasos de salida por aeropuerto? 
+6. ¿Cuál es la 32va aerolínea con mayor diversidad de vuelos de entrada? Utiliza `rank`
+7. ¿En qué horas (no importan los minutos) hay salidas del aeropuerto de Detroit al JFK de Nueva York? (Utiliza `ilike` para buscar los iata_code de los aeropuertos de Detroit y Nueva York)
+8. ¿Cuántos vuelos hay cancelados en promedio por día por aeropuerto?
+9. ¿Cuál es el delta de tiempo promedio entre salidas del aeropuerto de Detroit?
+10. ¿Cuáles vuelos no tienen una aerolínea asociada en el catálogo? Utiliza `left` o `right join` en tu respuesta
+
+
++ Reporta tus hallazgos en un Rmd que contenga la pregunta, los queries y los resultados obtenidos (no puedes ocupar dplyr!, todo tiene que estar en postgresql)
++ Genera un pull request a tu branch poniendo como revisores a Ana Sustaita, Liliana Millán e Irving Simonin
++ Cuando esté aprobado por los dos revisores mergea tu branch a develop ocupando la bandera `--no-ff` (siempre ocupa esta bandera al mergear ramas)
+
+#### Referencias
+
+[Documentación Postgres](https://www.postgresql.org/docs/9.5/static/index.html)
+
+Contacto en caso de problemas/dudas (en ese orden)
+
++ Liliana Millán liliana@datank.ai
++ Ana Sustaita ana@datank.ai
++ Adolfo Martínez adolfo@datank.ai
+
+### Unix
+
+**Objetivo:** Conocer los comandos básicos de unix/bash  para poder manipular archivos de manera más rápida y eficiente antes de hacer cualquier análisis.
+
++ En el repositorio de Datank `aprendizaje_humano/recursos/bash` existe un html con el material para cubrir esta parte de bash
++ Se requiere de entregar un Rmd y html/pdf con los ejercicios que vienen en la última parte
++ El set de datos lo encuentras en el S3 de datank, para bajar el set de datos necesitarás revisar la referencia de AWS CLI
+
+**Referencias**
+
++ [AWS CLI](https://aws.amazon.com/cli/?sc_channel=PS&sc_campaign=acquisition_MX&sc_publisher=google&sc_medium=command_line_b&sc_content=aws_cli_bmm&sc_detail=%2Bcli%20%2Baws&sc_category=command_line&sc_segment=161200955421&sc_matchtype=b&sc_country=MX&s_kwcid=AL!4422!3!161200955421!b!!g!!%2Bcli%20%2Baws&ef_id=WCSt7gAABL7eDTQ@:20170324190656:s)
+
+**Entregables**
+
++ Crear una rama con el nombre `feature/issue-xx` donde xx corresponde al \# de issue asociado a esta tarea
++ Agregar a tu carpeta `aprendizaje_humano/valeria_cong/entregables/unix_commands` el Rmd y html generado en esta parte
++ Hacer un pull request a Enrique Bonilla y Liliana Millán
+
+### Bash scripting
+
+**Objetivo:** Que puedas orquestar pipelines de datos a través de un script de bash: ejecutar programas de R, ejecutar programas de python, manejo de variables, manipulación de archivos, loops, operaciones condicionales.
+
++ Revisa el tutorial [Ryans tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
++ Revisa el tutorial [Bash scripting tutorial](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+

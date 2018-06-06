@@ -1,0 +1,161 @@
+---
+title: "Sprint 1"
+author: "Datank"
+date: "Mayo, 2018"
+output: html_document
+---
+
+![](../images/datank_logo.png)
+
+<br>
+**¡Bienvenida Valeria!**
+
+Nos da mucho gusto que hayas decidido formar parte de nuestro equipo de trabajo! Esperamos tenerte con nosotros por mucho tiempo.
+
+Estas primeras semanas de trabajo serán diferentes a tu día a día, pues consisten en darte tiempo para conocer nuestras herramientas de trabajo, nuestra cultura y nuestra forma de organizarnos.
+
+*Equipo de Machine Intelligence - Datank*
+
+*** 
+
+### Organización
+
+Somos 21 personas -incluyéndote- que forman parte de Datank. Tenemos 4 áreas:
+
++ Machine Intelligence -equipo al que perteneces-
+    + Liliana Millán liliana@datank.ai $\rightarrow$ Chief Data Scientist
+    + **R&D**
+        + Adolfo Martínez arinarmo@datank.ai $\rightarrow$  Data Scientist, Technical lead 
+        + Enrique Bonilla kike@datank.ai $\rightarrow$ Data Scientist 
+        + Juan Zinser juan@datank.ai $\rightarrow$ Data Scientist
+    + **Intel:** $\leftarrow$ Equipo al que perteneces!
+        + Irving Simonin irving@datank.ai $\rightarrow$ Data Scientist, Technical lead
+        + Ana Vela Sustaita ana@datank.ai $\rightarrow$ Data Scientist\* en proceso de ser Technical lead
+        + Michelle Audirac michelle@datank.ai $\rightarrow$ Data Scientist
++ Ingeniería:
+    + Fernando Cisneros fernando@datank.ai $\rightarrow$ Technical lead
+    + Alejandro Cisneros alejandro@datank.ai $\rightarrow$ DevOps
+    + Christian Ladrón christian@datank.ai $\rightarrow$ Full Stack engineer
+    + Rodrigo Quezada roderik@datank.ai $\rightarrow$ Full Stack engineer
+    + Itzel Mancilla itzel@datank.ai $\rightarrow$ Full Stack engineer
+    + Carolina Barrios carolina@datank.ai $\rightarrow$ Front developer jr
++ Producto: 
+    + Sandra Bermúdez sandra@datank.ai $\rightarrow$ Technical lead
+    + Ethel Rueda ethel@datank.ai $\rightarrow$ Copy
+    + Adriana Dillarza adriana@datank.ai $\rightarrow$ UX/designer jr
+    + Paul Hernández paul@datank.ai $\rightarrow$ Web designer
++ Operación
+    + Eduardo Blanco eduardo@datank.ai $\rightarrow$ CEO
+    + Jesus Ramos jesus@datank.ai $\rightarrow$ COO
+    + Denisse Castilla denisse@datank.ai $\rightarrow$ Office manager, customer relationship
+
+## Metodología de trabajo
+
+Utilizamos metodologías ágiles -tropicalizadas a Datank- para organizar nuestra forma de trabajo, en particular usamos Scrum y tenemos 2 periodos de tiempo:
+
++ **Milestones:** Periódos de 3 meses de trabajo ligados a liberaciones de producto
+    + **Sprints:** Periódos de 2 semanas con *goals* específicos ligados a los *goals* que queremos entregar en el milestone
+        + **Stand ups:** Todos los días por la mañana nos reunimos por equipos (proyectos) para tener un *stand up* en el que cada quien nos platica muy brevemente de 3 cosas (y nada más!): 
+              + qué hizo ayer
+              + si tuvo algún problema y necesita ayuda, de quién
+              + qué va a hacer ese día
+              
+En un par de días estarás ambientado a estas reuniones :P. Estos son los horarios de *stand ups* por equipo: 
+
++ Machine Intelligence: 
+    + Intel (al que perteneces): Todos los días a las 10:20 am
+    + R&D: Todos los días a las 10:15 am
++ Operaciones: Todos los días a las 10:30 am (tal vez tienes que estar en este también!)
++ Producto: Todos los días a las 10:30 am
++ Ingeniería: Todos los días a las 10:30 am
+
+Cada viernes hay un *stand up* de *stand ups* donde un miembro de cada equipo forma parte del *stand up*, en este *stand up* se menciona qué ha hecho cada equipo en esa semana, el objetivo es dar a conocer a todos en qué están trabajando los demás, la asistencia de los que no están directamente convocados es opcional. 
+
+
++ Durante 1 *milestone* podemos tener varias liberaciones de producto -planeadas al inicio de un *milestone*-, estas liberaciones pueden ser de producto, ingeniería y machine intelligence o solo de uno de ellos (o combinaciones, casi siempre necesitamos a ingeniería). Los *milestones* normalmente tienen 6 sprints a veces el último con un poquito menos días o un poquíto más de días dependiendo del número de días de asueto en ese *sprint*.
+
+
++ Los cierres de *sprints* suceden los martes a las 4 pm (cada 15 días) seguidas de una reunión de retrospección de *sprint* (4.30 pm) en donde platicamos sobre cómo nos fue en el *sprint*, los problemas encontrados y recomendaciones a llevar a cabo para mejorar los tiempos del siguiente *sprint*. 
+
++ El dia siguiente de cierre de sprint no hay *stand up* -miércoles-, en su lugar hacemos planeación de los *goals* a realizar el siguiente *sprint*, a esta reunión solo van los líderes técnicos de cada área con el objetivo de verificar que todos los equipos estamos remando a los mismos *goals* del *milestone* de manera sincronizada.
+
++ Cada equipo tiene sus propias reglas de inasistencia al *stand up*, esto es, si no llegas al tu *stand up* hay un "castigo" a cumplir, hasta donde tengo registrado, estos son los "castigos" de algunos equipos:
+
+    + Machine Intelligence: R&D y Intel: Por cada inasistencia se pone una raya en un pizarrón, cada raya requiere de comprar cajas de té (normalmente stash) para la empresa
+    + Ingeniería: Burpees, si, crossfit burpees por cada rayita :/
+    + Producto: No hay castigo
+    + Operaciones: No hay castigo
+
+***
+
+### Sprint 1
+
+En este momento nos encontramos en el Sprint 29 y tu tendrás tu primer sprint -de solo un par de días- al final del de Datank, iniciaremos tu segundo sprint con el 30vo de Datank. 
+
+
+**Objetivo:** Familiarizarte con las herramientas, cultura y organización de Datank 
+
+#### 1. Git, Github
+
++ **Inicio:** 1 junio 2018
++ **Fin:**  5 junio 2018
+
++ Revisar el material [Effective git branching](http://nvie.com/posts/a-successful-git-branching-model/), esta es la estrategia que seguimos en Datank. 
++ Además de guardar en git los repositorios de código también llevamos ahí la metodología *scrum*, nuestros *sprints* y *milestones*. 
++ Cada sprint y equipo tiene asociado un dashboard que ponemos en el repositorio de la organización -Datank-. El dashboard está compuesto por 4 columnas:
+
+1. **ToDo:** Las tareas a hacer en este sprint
+2. **InProgress:** Las tareas que se están ejecutando/implementando
+3. **InReview:** Las tareas que se encuentran en revisión de algún miembro del equipo porque ya están implementadas/ejecutadas. Todas las tareas son siempre revisadas por al menos 2 personas -que están involucradas en el proyecto asociado a las tareas- a través de hacer **pull request**
+    + Para hacer un *pull request* se requiere de comparar el *branch* en el que estas trabajando con el *branch* de *develop*
+    + Se debe hacer *pull request* solo hasta que ya no hagas más cambios a tu *issue*
+4. **Done:** Las tareas que ya fueron ejecutadas/implementadas, revisadas **y** aprobadas
+5. **Cancelled:** Las tareas que en la planeación del sprint tenían sentido, pero conforme avanzamos o bien fueron tareas que no evolucionaron porque no tuvieron solución -algoritmos que no nos llevaron a una respuesta satisfactoria- o porque eran tareas repetidas -ya hay otra tarjeta con esta tarea-. Si se cancelan por la primer razón deben ser cerrados manualmente con una explicación -en los comentarios- del por qué se están cancelando y dejar un reporte asociado -normalmente un rmd-. Si se cancelan porque están repetidos se cierran manualmente con el comentario de que la tarea es repetida, con el número de issue asociado a la tarea que se queda.
+
+
+Los *issues* que forman parte del dashboard son de 2 tipos -3 incluyendo *research*-
+
+1. **Goals:** La meta que queremos logar al final del sprint. Por ejemplo: implementar Random Forest para score crediticio. El goal debe poder terminarse en un 1 sprint, de no ser asi debemos dividir el goal para que una parte completa quepa en el sprint
+2. **Tasks:** 
+    + Un goal va asociado a 1 o más tasks que tenemos que hacer para llevar a cabo el goal. 
+    + El nombre del task tiene la siguiente estructura "Goal #111: what you're going to do", de esta manera ligamos el task al goal asociado indicando el número de issue del goal y lo que va a hacer ese task. 
+    + Si el goal solo tiene 1 task puedes declarar el issue como goal y task al mismo tiempo -su label-, o puedes generar un issue task y uno goal ... up to you, ambas formas están bien.
+    + Para que formen parte del sprint debes agregar en el *Project* asociado al issue el sprint que se encuentre activo en la pestaña *Organization*
+    + Cuando creamos los issues los ligamos al milestone asociado -en el que nos encontramos cuando creamos el issue- 
+    + El número del issue va a asociado al nombre del *branch* donde se desarrolla la respuesta más un prefijo feature, hotfix o bug dependiendo del tipo de issue; seguido del número de issue. Por ejemplo: **feature/issue-13** se refiere a que en ese branch estamos desarrollando un feature nuevo asociado al issue-13 del proyecto. Nota el slash (/) y el guión alto (-) en el nombre, así es como nombramos los branchs.
+    + Al cierre de un branch -una vez que el *pull request* ha sido aceptado- el último mensaje de commit debe ser **"close #13"** para que git cierre el issue automáticamente -es más fácil administrar los issues de esta manera- 
+    
+$\rightarrow$ Todos los issues se ponen en Inglés. 
+
+![](../images/github.png)
+
+<br>
+
+Si tienes alguna pregunta o duda de esta parte puedes pregutar a Liliana o Adolfo
+
+
+#### Entregables 
+
+Conocer cómo funciona Git —en particular github— para llevar a cabo administración de versiones. Queremos que te sientas cómodo administrando código tuyo y de los demás a través de git generando branches y haciendo pull requests para revisiones de código.
+
+En Datank utilizamos GitHub como principal administrador de repositorios y git como adminstrador de versiones, todo lo que generamos es revisado por al menos 2 peers para asegurar que se cumplen los objetivos y los estándares de desarrollo normales, 1 de los peers debe ser el líder del proyecto en el que estas participando y otro cualquier compañero del equipo de MI
+
++ Realizar el [tutorial](https://try.github.io/levels/1/challenges/1) 
++ Completar el curso online de [Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775) 
++ Revisar el material de [branches](http://nvie.com/posts/a-successful-git-branching-model/) $\rightarrow$ Este es el modelo que seguimos en Datank
++ Revisar el material de [Pull requests](https://guides.github.com/activities/hello-world/ )
++ Revisar el material de [Git-flow](http://aprendegit.com/que-es-git-flow/)
++ Revisar el material de [Cheat sheet git-flow](https://danielkummer.github.io/git-flow-cheatsheet/)
++ Clonar el repositorio de Datank aprendizaje_humano
+
+Contacto en caso de problemas o dudas:
+
++ Liliana Millán liliana@datank.ai
++ Adolfo Martínez adolfo@datank.ai
++ Fernando Cisneros fernando@datank.ai
+
+#### Referencias 
+
++ [Git tutorial](https://try.github.io/levels/1/challenges/1)
++ [Material de la maestría en ciencia de datos](https://github.com/datankai/aprendizaje_humano/blob/master/recursos/git/git.Rmd)
+
